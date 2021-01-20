@@ -32,5 +32,39 @@ public class Main {
         System.out.println("Mnożenie " + a + " * " + b + " * " + c + "= " + calculator.multi(a, b, c));
         System.out.println("Mnożenie " + a + " * " + b + " * " + c + " * " + d + "= " + calculator.multi(a, b, c, d));
         System.out.println("Mnożenie " + a + " * " + b + " * " + c + " * " + d + " * " + e + " * 9 * 2 * 1 * -4 = " + calculator.multi(a, b, c, d, e, 9, 2, 1, -4));
+
+
+        // Zadanie 3 - StudentInfo
+        System.out.println("");
+        System.out.println("---------- Zadanie 3 - Informacja o studentach ----------");
+
+
+        char[] imie1 = {'E', 'w', 'a'};
+        char[] imie2 = {'E', 'l', 'a'};
+        char[] imie3 = {'P', 'a', 't'};
+        char[] imie4 = {'J', 'a', 'n'};
+        char[] imie5 = {'T', 'o', 'm'};
+
+        char[] nazwisko1 = {'L', 'u', 'p', 'a'};
+        char[] nazwisko2 = {'L', 'a', 't', 'o'};
+        char[] nazwisko3 = {'K', 'o', 't'};
+        char[] nazwisko4 = {'L', 'i', 'p', 'a'};
+        char[] nazwisko5 = {'K', 'o', 's'};
+
+
+        char[] email1 = {'j', 'a', 'n', '@', 'w', 'p', '.', 'p', 'l'};
+        char[] email2 = {'t', 'o', 'm', '@', 'w', 'p', '.', 'p', 'l'};
+
+        StudentInfo s1 = new StudentInfo(imie1, nazwisko1);
+        StudentInfo s2 = new StudentInfo(imie2, nazwisko2);
+        StudentInfo s3 = new StudentInfo(imie3, nazwisko3);
+        StudentInfo s4 = new StudentInfo(imie4, nazwisko4, 25, email1, 221123);
+        StudentInfo s5 = new StudentInfo(imie5, nazwisko5, 21, email2, 455699);
+
+        s1.displayShort();
+        s2.displayShort();
+        s3.displayShort();
+        s4.displayLong();
+        s5.displayLong();
     }
 }
